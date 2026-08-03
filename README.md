@@ -4,7 +4,7 @@ A native Kotlin/Jetpack Compose app for a private two-person household wardrobe.
 
 ## MVP decisions captured
 
-- Google sign-in and a shared household with `Me` / `Wife` profiles
+- Google sign-in and a shared household with the signed-in account name plus a configurable second profile
 - Private clothing items: other household members see only `Private item`
 - Photos stored in cloud; phone keeps only removable thumbnails
 - Office weekly planning plus daily replacement, functions, and destination-based travel packing
@@ -25,4 +25,4 @@ A native Kotlin/Jetpack Compose app for a private two-person household wardrobe.
 
 Create a Firebase project, enable Google as an Authentication provider, create Firestore and Cloud Storage, then place the downloaded `google-services.json` in `app/`. Do not commit that file. Cloud Security Rules must verify that the signed-in user belongs to the requested household before any read or write.
 
-The project intentionally does not request SMS access yet. That feature remains optional for a personal install because Google Play restricts SMS permissions for broadly distributed apps.
+SMS scanning is optional for personal testing because Google Play restricts SMS permissions for broadly distributed apps.
