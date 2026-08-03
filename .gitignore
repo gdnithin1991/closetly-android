@@ -1,0 +1,10 @@
+.gradle/
+build/
+app/build/
+local.properties
+app/google-services.json
+app/google-services.json_bkp.json
+.idea/
+.DS_Store
+**/.DS_Store
+*.apk

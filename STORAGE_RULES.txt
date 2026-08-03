@@ -1,0 +1,6 @@
+Storage is intentionally not used for the Spark-plan MVP.
+
+Firebase Storage currently requires upgrading this project, so Closetly stores
+small compressed item photos inside Firestore documents for now.
+
+Do not enable or publish Storage rules while staying on Spark.
